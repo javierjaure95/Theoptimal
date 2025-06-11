@@ -1,0 +1,23 @@
+<h1><%= render @project%></h1>
+<h2>Total de Tareas: <%= @counts %><h2>
+
+<h3>Tareas Terminadas </h3> 
+<% if @tasks.completed.empty? %>
+    <p>No hay Tareas Terminadas</p>
+<% end %>
+
+<% @tasks.completed.each do |task| %>
+        <h2>Titulo: <%= task.title %></h2>
+        <p>Descripcion: <%= task.description %></p>
+<% end %>
+
+<h3>Tareas no Terminadas</h3> 
+<% if @tasks.open.empty? %>
+    <p>No hay Tareas Abiertas</p>
+<% end %>
+
+<% @tasks.open.each do |task| %>
+        <h2>Titulo: <%= task.title %></h2>
+        <p>Descripcion: <%= task.description %></p>
+<% end %>
+
