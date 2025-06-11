@@ -8,10 +8,10 @@
 
 ## Rutas
 
-Crear /projects 
+Crear /projects/new
 Show /projects/:id
 
-Crear /tasks
+Crear /tasks/new
 Show /tasks/:id
 
 Todas las task de un proyecto /projects/:id/summary
